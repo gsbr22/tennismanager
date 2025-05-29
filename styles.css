@@ -20,6 +20,22 @@ header {
     color: white;
     padding: 20px;
     border-radius: 5px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 5px 0 0;
+}
+
+#current-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
 }
 
 .player-info {
@@ -97,6 +113,22 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
+.tournament-results, .ranking-changes {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#tournament-matches, #ranking-changes-content {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .game-log {
     background-color: white;
     padding: 20px;
@@ -115,4 +147,32 @@ tr:hover {
 .highlight {
     font-weight: bold;
     color: #1e88e5;
+}
+
+.rank-up {
+    color: green;
+}
+
+.rank-down {
+    color: red;
+}
+
+.match-result {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.match-win {
+    background-color: #e8f5e9;
+}
+
+.match-loss {
+    background-color: #ffebee;
+}
+
+.ranking-change {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
 }
